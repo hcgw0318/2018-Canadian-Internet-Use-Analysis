@@ -1,0 +1,43 @@
+---
+title: "Impact of Internet Use on Canadian Productivity and Recreation"
+subtitle: "Brief Overview of Canadian Internet Use Trends"
+author: "Haocong Wu"
+date: "`r format(Sys.time(), '%d %B %Y')`"
+thanks: "Code and data are available at: https://github.com/hcgw0318/2018-Canadian-Internet-Use-Analysis"
+abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+output:
+  bookdown::pdf_document2
+toc: FALSE
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(kableExtra)
+library(bookdown)
+library(here)
+library(forcats)
+```
+
+```{r, include=FALSE}
+# DATA IMPORT
+```
+
+# Introduction
+
+# Data
+
+## Data Source
+
+## Survey Methodology
+
+# Simulation and Modelling
+
+# Results
+
+# Discussion
+
+# References
+
