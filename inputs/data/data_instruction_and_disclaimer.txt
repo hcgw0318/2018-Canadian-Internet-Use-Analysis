@@ -1,0 +1,12 @@
+The terms of use of the odesi portal, found here: https://search1.odesi.ca/#/terms, disallows the reproduction or transmittance of the data obtained from the portal.
+
+Raw data can be obtained through the following steps:
+1. Visit the odesi data portal at odesi.ca
+2. Browse data available
+3. Select "Communications and Information"
+=> "CANADA"
+=> "Canadian Internet Use Survey (CIUS)"
+=> "2018"
+=> "Canadian Internet Use Survey, 2018"
+4. Click the download button (floppy disk) near the top right of the site
+5. Select the CSV download option and login with your organization credential if prompted
