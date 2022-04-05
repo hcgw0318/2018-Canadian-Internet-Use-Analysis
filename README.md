@@ -5,20 +5,24 @@ This repository contains the data acquisition steps, R markdown files, R script 
 The repository is organized into 3 folders: inputs, outputs, and scripts.
 
 Inputs:
-  Codebook of raw data
-  Relevant literature
+
+    Codebook of raw data
+    Relevant literature
 
 Outputs:
-  Paper R markdown
-  Paper PDF
-  Bibliography
+
+    Paper R markdown
+    Paper PDF
+    Bibliography
 
 Scripts:
-  Data cleaning script
-  Data processing script
+
+    Data cleaning script
+    Data processing script
 
 Recreation steps:
-  Obtain CIUS 2018 raw data from odesi portal (instructions found in the ../inputs/data folder), place CSV file in ..inputs/data
-  Open CIUS_analysis.Rproj
-  Run scripts found in ../scripts sequentially
-  Run paper.Rmd
+
+    Obtain CIUS 2018 raw data from odesi portal (instructions found in the ../inputs/data folder), place CSV file in ..inputs/data
+    Open CIUS_analysis.Rproj
+    Run scripts found in ../scripts sequentially
+    Run paper.Rmd
