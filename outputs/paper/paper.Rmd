@@ -1,10 +1,10 @@
 ---
-title: "Impact of Internet Use on Canadian Productivity and Recreation"
+title: "Impact of Internet Infrastructure on Canadian Productivity and Recreation"
 subtitle: "Brief Overview of Canadian Internet Use Trends"
 author: "Haocong Wu"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 thanks: "Code and data are available at: https://github.com/hcgw0318/2018-Canadian-Internet-Use-Analysis"
-abstract: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+abstract: "Internet access is critical to many users. This paper examines the quality of internet access that users have and how they are impacted by subpar service. With data collected by Statistics Canada in the Canadian Internet Use Survey, and modelled with linear regression, stability positively impacts user sentiment, whilst speed has diminishing returns past a certain point."
 output:
   bookdown::pdf_document2
 toc: FALSE
@@ -25,17 +25,26 @@ library(forcats)
 # DATA IMPORT
 ```
 
-Keywords:
+Keywords: internet use, internet infrastructure, statistics canada, canadian residents, linear regression
 
 # Introduction
 
+Internet access is becoming, if not already considered, a human right. It is a standard point of communication used by the majority of the Canadian population. The platform that the internet provides can be used to host a variety of activities, ranging from those of productive nature, to others of recreational and leisurely type. The growing importance of internet access necessitates a revision of the bare minimums of providing internet service.
+
+This paper examines the causal relations between individual sentiments on their internet use experiences to factors such as connection speed, connection stability, pricing, hours of use, nature of use, and necessity of use.
+
+The following sections of the paper is organized as stated: the Data section discusses the source of the data and its surveying methodology, the Modelling section attempts to formalize a model incorporating various factors to explain the response variable of user sentiment, the Results section discusses the impact of the selected factors, and the Discussion section comments on the results and its validity, potential bias, and weaknesses of the paper.
+
+
 # Data
+
+[@citeR]
 
 ## Data Source
 
 ## Survey Methodology
 
-# Simulation and Modelling
+# Modelling
 
 # Results
 
