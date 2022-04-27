@@ -1,10 +1,10 @@
 ---
-title: "Impact of Internet Infrastructure on Canadian Productivity and Recreation"
+title: "Impact of Internet Infrastructure on Canadian Household Productivity and Recreation"
 subtitle: "Brief Overview of Canadian Internet Use Trends"
 author: "Haocong Wu"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 thanks: "Code and data are available at: https://github.com/hcgw0318/2018-Canadian-Internet-Use-Analysis"
-abstract: "Internet access is critical to many users. This paper examines the quality of internet access that users have and how they are impacted by subpar service. With data collected by Statistics Canada in the Canadian Internet Use Survey, and modelled with linear regression, stability positively impacts user sentiment, whilst speed has diminishing returns past a certain point."
+abstract: "Internet access is critical to many users. This paper examines the quality of internet access that users have and how they are impacted by subpar service. With data collected by Statistics Canada in the Canadian Internet Use Survey, and modelled with linear regression, stability positively impacts user household internet usage, whilst speed has diminishing returns past a certain point."
 output:
   bookdown::pdf_document2
 toc: FALSE
@@ -22,7 +22,7 @@ library(forcats)
 ```
 
 ```{r, include=FALSE}
-# DATA IMPORT
+cius_data <- read_csv(here("outputs/data/cleaned_data_v2.csv"))
 ```
 
 Keywords: internet use, internet infrastructure, statistics canada, canadian residents, linear regression
@@ -31,24 +31,182 @@ Keywords: internet use, internet infrastructure, statistics canada, canadian res
 
 Internet access is becoming, if not already considered, a human right. It is a standard point of communication used by the majority of the Canadian population. The platform that the internet provides can be used to host a variety of activities, ranging from those of productive nature, to others of recreational and leisurely type. The growing importance of internet access necessitates a revision of the bare minimums of providing internet service.
 
-This paper examines the causal relations between individual sentiments on their internet use experiences to factors such as connection speed, connection stability, pricing, hours of use, nature of use, and necessity of use.
+This paper examines the causal relations between individual internet usage amounts to factors such as connection speed,nature of use, and necessity of use.
 
-The following sections of the paper is organized as stated: the Data section discusses the source of the data and its surveying methodology, the Modelling section attempts to formalize a model incorporating various factors to explain the response variable of user sentiment, the Results section discusses the impact of the selected factors, and the Discussion section comments on the results and its validity, potential bias, and weaknesses of the paper.
+The following sections of the paper is organized as stated: the Data section discusses the source of the data and its surveying methodology, the Modelling section attempts to formalize a model incorporating various factors to explain the response variable of user household internet use duration, the Results section discusses the impact of the selected factors, and the Discussion section comments on the results and its validity, potential bias, and weaknesses of the paper.
 
 
 # Data
 
-[@citeR]
-
 ## Data Source
+
+The Canadian Internet Use Survey (CIUS) replaced the Household Internet Use Survey (HIUS) in 2005 [@citecius]. The 2018 of the CIUS aims to record and track the quickly increasing Canadian internet utilization. Aspects of internet technologies that Canadians interact with such as online government services, social networks, smartphone use, and online commercial platforms are presented to respondents for their sentiments.
+
+Survey data was provided by the <odesi> portal, maintained by the Ontario Council of University Libraries.
+
+The particular set of data used in this report is a subset of the topics covered by the 2018 CIUS.
 
 ## Survey Methodology
 
-# Modelling
+Based on the 2018 CIUS documentation [@citecius2018doc], the survey methodology can be summarized by the following.
+
+The CIUS attempts to gauge the population habits regarding various facets of internet use The CIUS' stated target population includes all individuals at and above the age of 15 in Canada, excluding those in the Canadian Territories and excluding institutionalized individuals.
+
+The sampling frame of the GSS relies on the availability of telephone access. Households without telephones, as well as households with telephone services not covered by the current frame, were excluded from the sampling frame. 
+
+The sampling process consisted of location based random sampling without replacement. A target minimum sample size for each province was determined, and this minimum sample size was allocated to the strata within the province.
+
+Each respondent was contacted to complete either an electronic questionnaire, or participate in a computer assisted telephone interview. If the respondent refused or was absent, further contact attempts were made through telephone contact until reasonable confirmation of non-response, and the respondent is removed from the pool.
+
+The 2018 CIUS had a target sample size of 15,000. The actual number of respondents was 13,810, the total households contacted was 33,248, and the overall response rate was 41.6%.
+
+## Data Processing Tools and Methodology
+
+Data processing and analysis in this project is done in the R statistical programming language [@citeR]. The following R packages were imported and used for their corresponding purpose:
+
+* `tidyverse` [@citetidyverse] : Used for general logical commands, file importing, and data manipulation
+
+* `knitr` [@citeknitr] : Used to generate and knit the Markdown document to PDF
+
+* `ggplot2` [@citeggplot2] : Used to generate graphs and apply styling
+
+* `kableExtra` [@citekableExtra] : Used to assist in table formatting
+
+* `bookdown` [@citebookdown] : Used to improve the Markdown document formatting
+
+* `here` [@citehere] : Used to simplify file access in a project environment
+
+* `forcats` [@citeforcats] : Used to sort data tables by frequency
+
+## Variables of Interest
+
+```{r}
+ggplot(cius_data, aes(x=fct_infreq(uses_internet), fill=home_internet_access))+
+  geom_bar(stat = "count") +
+  labs(x = "Uses the internet", 
+       y = "Count",
+       title = "Respondents and their usage and access to internet at home",
+       fill = "Home internet access")
+  
+```
+
+```{r}
+cius_data$education_level <- cius_data$education_level %>% 
+  factor(levels=c("High school diploma or an equivalency certificate or less",
+                  "Certificate/diploma Univ. below bachelor/College/CEGEP/trade",
+                  "University degree above the bachelor or bachelor's degree",
+                  "Not stated"))
+
+ggplot(cius_data, aes(x=education_level,fill=uses_internet))+
+  geom_bar(stat = "count")+
+  theme(axis.text.x = element_text(angle = -15, vjust = 1, hjust=0))+
+  labs(x = "Education level", 
+       y = "Count",
+       title = "Education level and internet use",
+       fill = "Internet usage")
+```
+
+```{r}
+cius_data$age_group <- cius_data$age_group %>% 
+  factor(levels=c("15 to 24 years",
+                  "25 to 34 years",
+                  "35 to 44 years",
+                  "45 to 54 years",
+                  "55 to 64 years",
+                  "65 years and over"))
+ggplot(cius_data, aes(x=age_group,fill=uses_internet))+
+  geom_bar(stat = "count") + 
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) + 
+  labs(x = "Age group", 
+       y = "Count",
+       title = "Age group and internet use",
+       fill = "Internet usage")
+```
+
+
+
+```{r}
+connection_data <- summarise_all(cius_data[,62:73], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "connection_type", values_to = "count")
+ggplot(connection_data, aes(x=reorder(connection_type, -count),y=count))+
+  geom_bar(stat = "identity") + 
+  theme(axis.text.x = element_text(angle = -15, vjust = 1, hjust=0)) + 
+  labs(x = "Connection type", 
+       y = "Count",
+       title = "Home internet connection type")
+```
+```{r}
+internet_activity <- cbind(select(cius_data,
+                                  no_communication,
+                                  no_commerce,
+                                  no_entertainment,
+                                  no_information,
+                                  no_other_activities,
+                                  internet_income)) %>%
+  summarise_all(table)
+internet_activity <- internet_activity[-c(2:4),] %>%
+  rename(Communication=no_communication,
+         Commerce=no_commerce,
+         Entertainment=no_entertainment,
+         Information=no_information,
+         Other=no_other_activities,
+         Income=internet_income) %>%
+  pivot_longer(everything(),names_to = "activity", values_to = "count")
+ggplot(internet_activity, aes(x=reorder(activity, -count),y=count))+
+  geom_bar(stat = "identity") + 
+  labs(x = "Internet usage type", 
+       y = "Count",
+       title = "Purposes of internet usage")
+```
+
+```{r}
+cius_data$hours_used <- cius_data$hours_used %>% 
+  factor(levels=c("Less than 5 hours per week",
+                  "5 to less than 10 hours per week",
+                  "10 to less than 20 hours per week",
+                  "20 to less than 40 hours per week",
+                  "40 hours or more per week",
+                  "Not stated",
+                  "Valid skip"))
+ggplot(cius_data, aes(x=hours_used))+
+  geom_bar(stat = "count") + 
+  theme(axis.text.x = element_text(angle = -15, vjust = 1, hjust=0)) + 
+  labs(x = "Duration of use",
+       y = "Count",
+       title = "Hours of internet use per week (excluding entertainment)")
+```
 
 # Results
+
+```{r}
+set.seed(318)
+regression_dat <- cius_data[cius_data$uses_internet=="Yes" &
+                              cius_data$home_internet_access=="Yes" &
+                              !(cius_data$hours_used=="Valid skip" | cius_data$hours_used=="Not stated"),]
+regression_dat <- regression_dat %>% 
+  mutate(hours_used=case_when(hours_used=="Less than 5 hours per week"~
+                                sample(x = c(0:4), size = n(),replace = TRUE),
+                              hours_used=="5 to less than 10 hours per week"~
+                                sample(x = c(5:9), size = n(),replace = TRUE),
+                              hours_used=="10 to less than 20 hours per week"~
+                                sample(x = c(10:19), size = n(),replace = TRUE),
+                              hours_used=="20 to less than 40 hours per week"~
+                                sample(x = c(20:39), size = n(),replace = TRUE),
+                              hours_used=="40 hours or more per week"~
+                                sample(x = c(40:60), size = n(),replace = TRUE)))
+```
+
+```{r}
+lm_model <- lm(data = regression_dat, hours_used ~ 
+                 gender + 
+                 education_level + 
+                 age_group)
+modelsummary(lm_model)
+summary(lm_model)
+```
 
 # Discussion
 
 # References
+
 

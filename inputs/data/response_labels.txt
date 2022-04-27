@@ -1,0 +1,2971 @@
+label define   ABOSTAT_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_160A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_170A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_170B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_170C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_170E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_170F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_170G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_170H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_180A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     5  "Don't know" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_190A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_190B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_190C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_190D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_190J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_190K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_190L_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_200A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_200B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_200C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_200D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_200E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_200F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_200G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_200H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   AC_G190F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     9  "Not stated"
+label define   AC_G190I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     9  "Not stated"
+label define   AGE_GRP_FMT ///
+     1  "15 to 24 years" ///
+     2  "25 to 34 years" ///
+     3  "35 to 44 years" ///
+     4  "45 to 54 years" ///
+     5  "55 to 64 years" ///
+     6  "65 years and over" ///
+     96  "Valid skip" ///
+     97  "Don't know" ///
+     98  "Refusal" ///
+     99  "Not stated"
+label define   AVGEXP_N_FMT ///
+     9999999996  "Valid skip" ///
+     9999999997  "Don't know" ///
+     9999999998  "Refusal" ///
+     9999999999  "Not stated"
+label define   BPR_Q16_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_400A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_400B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_400C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_400D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_410A_FMT ///
+     01  "None" ///
+     02  "Less than 5 hours per week" ///
+     03  "5 to less than 10 hours per week" ///
+     04  "10 to less than 20 hours per week" ///
+     05  "20 to less than 40 hours per week" ///
+     06  "40 hours or more per week" ///
+     96  "Valid skip" ///
+     97  "Don't know" ///
+     98  "Refusal" ///
+     99  "Not stated"
+label define   CC_420A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_420B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_420C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_420D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_430A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_430B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_430C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_430D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CC_430E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   CYB_INC_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DGI_Q05_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_490A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_490B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_490C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_490D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_490E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_490F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_490G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_500I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_510I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_520A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_520B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_520C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_520D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_520E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_520F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_520G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   DS_520H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EARN_INC_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_530L_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_540A_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540B_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540C_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540D_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540E_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540F_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540G_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540H_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540I_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540J_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540K_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_540X_FMT ///
+     99999996  "Valid skip" ///
+     99999997  "Don't know" ///
+     99999998  "Refusal" ///
+     99999999  "Not stated"
+label define   EC_550A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550L_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550M_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550N_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_550O_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_560A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_560B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_560C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_560D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_560E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_560F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_560G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_570A_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_590A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_590B_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_590C_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_600A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_600B_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_600C_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_610A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_610B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_610C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_610D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_610E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_610F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_610G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_610H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_620A_FMT ///
+     999996  "Valid skip" ///
+     999997  "Don't know" ///
+     999998  "Refusal" ///
+     999999  "Not stated"
+label define   EC_640A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_640B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_640C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_640D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_640E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_640F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_640G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_640I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_650J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_660A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_660B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_660C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_660D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_670I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_680A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_680B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_680C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_680D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_680E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_680F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_680G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_690L_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_700A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_700B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_700C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_700F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_700G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_700H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EC_700I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   EMP_FMT ///
+     1  "Employed" ///
+     2  "Not employed" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GENDER_FMT ///
+     1  "Male" ///
+     2  "Female" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_350L_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_360A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     5  "Don't know" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_360B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_360C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_360D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_370A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     5  "Don't know" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_370B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_370C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_370D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_380A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_380B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_380C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_380D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_380E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_380F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_380G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_380H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_390A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_390B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_390D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_390F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_390G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_390H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_390I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   GV_USER_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   G_EDUC_FMT ///
+     1  "High school diploma or an equivalency certificate or less" ///
+     2  "Certificate/diploma Univ. below bachelor/College/CEGEP/trade" ///
+     3  "University degree above the bachelor or bachelor's degree" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_780L_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HA_790A_FMT ///
+     1  "Less than 5 megabits per second (Mbps)" ///
+     2  "5 to less than 20 Mbps" ///
+     3  "20 to less than 100 Mbps" ///
+     4  "100 or more Mbps" ///
+     5  "Don't know" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HCOMP_FMT ///
+     1  "Family household with children under 18" ///
+     2  "Family household without children under 18" ///
+     3  "Single person household" ///
+     4  "Other household type" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HINCQUIN_FMT ///
+     1  "Quintile 1 - <=$ 35,000" ///
+     2  "Quintile 2 - $35,000 - $60,000" ///
+     3  "Quintile 3 - $60,000 - $95,000" ///
+     4  "Quintile 4 - $95,000 - $150,000" ///
+     5  "Quintile 5 - >= $150,000" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   HSDSIZEC_FMT ///
+     1  "One person household" ///
+     2  "Two person household" ///
+     3  "Three person household" ///
+     4  "Four person household" ///
+     5  "Five or more person household" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   LAN_Q01_FMT ///
+     1  "English only" ///
+     2  "French only" ///
+     3  "Both English and French" ///
+     4  "Neither English nor French" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   LUC_RST_FMT ///
+     1  "Larger Urban Centres (CMA/CA)" ///
+     2  "Rural and Small Town (non-CMA/CA)" ///
+     3  "Prince Edward Island" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   NON_SHOP_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   ONL_SHOP_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_710A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     5  "Don't know" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_720A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_730A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_740A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_740B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_740C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_750A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_750B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_750D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_750G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_760A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_760D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   OW_G770A_FMT ///
+     01  "Less than $200" ///
+     02  "$200 to less than $1,000" ///
+     03  "$1,000 to less than $10,000" ///
+     04  "$10,000 or more" ///
+     96  "Valid skip" ///
+     97  "Don't know" ///
+     98  "Refusal" ///
+     99  "Not stated"
+label define   PROVINCE_FMT ///
+     10  "Newfoundland and Labrador" ///
+     11  "Prince Edward Island" ///
+     12  "Nova Scotia" ///
+     13  "New Brunswick" ///
+     24  "Quebec" ///
+     35  "Ontario" ///
+     46  "Manitoba" ///
+     47  "Saskatchewan" ///
+     48  "Alberta" ///
+     59  "British Columbia" ///
+     96  "Valid skip" ///
+     97  "Don't know" ///
+     98  "Refusal" ///
+     99  "Not stated"
+label define   SM_270A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     5  "Don't know" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_280A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_280B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_280C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_280E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_280F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_290A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_290B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_290C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_290D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_290E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_300K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SM_USER_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_310A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_310B_FMT ///
+     01  "None" ///
+     02  "One" ///
+     03  "Two" ///
+     04  "Three" ///
+     05  "Four" ///
+     06  "More than four" ///
+     96  "Valid skip" ///
+     97  "Don't know" ///
+     98  "Refusal" ///
+     99  "Not stated"
+label define   SN_320A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_320B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_320C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_320G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_330A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_330B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_330C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_330D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_330E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_330F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_330G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_330H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_340L_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_G320F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_G340J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_REGUS_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SN_USER_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_440A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_440B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_440C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_440D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_440E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_440F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_440G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_440H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_450K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_460K_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_470A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_470B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_470C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_470D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_480A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_480B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_480C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   SP_480D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_210A_FMT ///
+     1  "Less than 5 hours per week" ///
+     2  "5 to less than 10 hours per week" ///
+     3  "10 to less than 20 hours per week" ///
+     4  "20 to less than 40 hours per week" ///
+     5  "40 hours or more per week" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_220A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_220B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_220C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_220D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_220E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_220F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_220G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_230I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_241A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_241B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_241C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_241D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_241E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_241F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_241G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_241H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_242A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_242B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_242C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_242D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_242E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_243J_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_244A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_244B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_244C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_244D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_244E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_245I_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_250A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_250B_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_250C_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_250D_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_250E_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_250F_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_250G_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_250H_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   UI_260A_FMT ///
+     1  "Yes" ///
+     3  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"
+label define   VS_USER_FMT ///
+     1  "Yes" ///
+     2  "No" ///
+     6  "Valid skip" ///
+     7  "Don't know" ///
+     8  "Refusal" ///
+     9  "Not stated"

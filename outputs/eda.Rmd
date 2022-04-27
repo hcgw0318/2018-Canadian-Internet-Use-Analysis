@@ -1,0 +1,152 @@
+---
+title: "exploratory data analysis"
+author: "HC"
+date: "21/04/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(kableExtra)
+library(here)
+library(forcats)
+library(modelsummary)
+```
+
+```{r}
+cius_data <- read_csv(here("outputs/data/cleaned_data_v2.csv"))
+cius_data[] <- lapply(cius_data, factor)
+```
+
+frequency plot of province
+```{r}
+ggplot(cius_data, aes(x=fct_infreq(province)))+
+  geom_bar(stat = "count")
+```
+frequency plot of education
+```{r}
+ggplot(cius_data, aes(x=fct_infreq(education_level)))+
+  geom_bar(stat = "count")
+```
+frequency plot of age group
+```{r}
+ggplot(cius_data, aes(x=fct_infreq(age_group)))+
+  geom_bar(stat = "count")
+```
+series of graphs of gender, language prof, employment, immigrant status
+```{r}
+par(mfrow=c(2,2))
+ggplot(cius_data, aes(x=gender))+
+  geom_bar(stat = "count")
+ggplot(cius_data, aes(x=official_language_proficient))+
+  geom_bar(stat = "count")
+ggplot(cius_data, aes(x=employment_status))+
+  geom_bar(stat = "count")
+ggplot(cius_data, aes(x=is_immigrant))+
+  geom_bar(stat = "count")
+```
+
+
+graph of internet use status
+```{r}
+ggplot(cius_data, aes(x=uses_internet))+
+  geom_bar(stat = "count")
+```
+frequency plot of hours used
+```{r}
+ggplot(cius_data, aes(x=hours_used))+
+  geom_bar(stat = "count")
+```
+graph of access at home
+```{r}
+ggplot(cius_data, aes(x=home_internet_access))+
+  geom_bar(stat = "count")
+```
+summary statistics of household connection type
+```{r}
+connection_data <- summarise_all(cius_data[,62:73], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "connection_type", values_to = "count")
+ggplot(connection_data, aes(x=reorder(connection_type, -count),y=count))+
+  geom_bar(stat = "identity")
+```
+
+frequency plot of connection speed
+
+```{r}
+ggplot(cius_data, aes(x=fct_infreq(connection_speed)))+
+  geom_bar(stat = "count")
+```
+
+summary statistics of device type
+```{r}
+device_data <- summarise_all(cius_data[,15:21], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "device_type", values_to = "count")
+ggplot(device_data, aes(x=reorder(device_type, -count),y=count))+
+  geom_bar(stat = "identity")
+```
+summary statistics of communications
+```{r}
+communications_data <- summarise_all(cius_data[,22:28], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "communications_type", values_to = "count")
+ggplot(communications_data, aes(x=reorder(communications_type, -count),y=count))+
+  geom_bar(stat = "identity")
+```
+summary statistics of information
+```{r}
+information_data <- summarise_all(cius_data[,30:33], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "information_type", values_to = "count")
+ggplot(information_data, aes(x=reorder(information_type, -count),y=count))+
+  geom_bar(stat = "identity")
+```
+summary statistics of entertainment
+```{r}
+entertainment_data <- summarise_all(cius_data[,35:43], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "entertainment_type", values_to = "count")
+ggplot(entertainment_data, aes(x=reorder(entertainment_type, -count),y=count))+
+  geom_bar(stat = "identity")
+```
+summary statistics of commerce
+```{r}
+commerce_data <- summarise_all(cius_data[,45:48], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "commerce_type", values_to = "count")
+ggplot(commerce_data, aes(x=reorder(commerce_type, -count),y=count))+
+  geom_bar(stat = "identity")
+```
+summary statistics of other activities
+```{r}
+other_activities_data <- summarise_all(cius_data[,50:57], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "other_activities_type", values_to = "count")
+ggplot(other_activities_data, aes(x=reorder(other_activities_type, -count),y=count))+
+  geom_bar(stat = "identity")
+```
+
+graph of internet use as source of income
+
+```{r}
+ggplot(cius_data, aes(x=internet_income))+
+  geom_bar(stat = "count")
+```
+graph of major or additional source of income
+
+```{r}
+income_data <- summarise_all(cius_data[,60:61], table)[-c(1:3),] %>%
+  pivot_longer(everything(),names_to = "income_type", values_to = "count")
+ggplot(income_data, aes(x=reorder(income_type, -count),y=count))+
+  geom_bar(stat = "identity")
+```
+
+```{r}
+internet_activity <- cbind(select(cius_data,
+                                  no_communication,
+                                  no_commerce,
+                                  no_entertainment,
+                                  no_information,
+                                  no_other_activities,
+                                  internet_income)) %>%
+  summarise_all(table)
+internet_activity <- internet_activity[-c(2:4),] %>%
+  pivot_longer(everything(),names_to = "activity", values_to = "count")
+ggplot(internet_activity, aes(x=reorder(activity, -count),y=count))+
+  geom_bar(stat = "identity")
+```
