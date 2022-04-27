@@ -4,7 +4,7 @@ subtitle: "Brief Overview of Canadian Internet Use Trends"
 author: "Haocong Wu"
 date: "`r format(Sys.time(), '%d %B %Y')`"
 thanks: "Code and data are available at: https://github.com/hcgw0318/2018-Canadian-Internet-Use-Analysis"
-abstract: "Internet access is critical to many users. This paper examines the quality of internet access that users have and how they are impacted by subpar service. With data collected by Statistics Canada in the Canadian Internet Use Survey, and modelled with linear regression, stability positively impacts user household internet usage, whilst speed has diminishing returns past a certain point."
+abstract: "Internet access is critical to many users. This paper examines the quality of internet access that users have and how they are impacted by subpar service. With data collected by Statistics Canada in the Canadian Internet Use Survey, and modelled with linear regression, age has a negative correlation with user household internet usage, whilst education level has a strong positive correlation."
 output:
   bookdown::pdf_document2
 toc: FALSE
@@ -19,6 +19,7 @@ library(kableExtra)
 library(bookdown)
 library(here)
 library(forcats)
+library(modelsummary)
 ```
 
 ```{r, include=FALSE}
@@ -78,64 +79,59 @@ Data processing and analysis in this project is done in the R statistical progra
 
 * `forcats` [@citeforcats] : Used to sort data tables by frequency
 
-## Variables of Interest
+* `modelsummary` [@citemodelsummary] : Used to display regression model information
 
-```{r}
-ggplot(cius_data, aes(x=fct_infreq(uses_internet), fill=home_internet_access))+
-  geom_bar(stat = "count") +
-  labs(x = "Uses the internet", 
-       y = "Count",
-       title = "Respondents and their usage and access to internet at home",
-       fill = "Home internet access")
-  
+## Relevant variables
+
+Variables such as whether the respondent used the internet and had an internet connection at home were used to identify the subset of the sample whose internet usage time is the response of interest.
+Variables likely to explain variations in internet usage time contained in the survey were age, education level, and purpose of internet usage.
+
+```{r, echo=FALSE}
+demo_dat <- cius_data %>% select(age_group, gender) %>%
+  group_by(age_group, gender) %>%
+  tally() %>%
+  pivot_wider(names_from = gender, values_from = n) %>% 
+  remove_rownames %>% 
+  column_to_rownames(var="age_group")
+
+prov_dat <- cius_data %>% select(province) %>% group_by(province) %>% tally()
+colnames(prov_dat) <- c("Province", "Count")
 ```
 
-```{r}
-cius_data$education_level <- cius_data$education_level %>% 
-  factor(levels=c("High school diploma or an equivalency certificate or less",
-                  "Certificate/diploma Univ. below bachelor/College/CEGEP/trade",
-                  "University degree above the bachelor or bachelor's degree",
-                  "Not stated"))
-
-ggplot(cius_data, aes(x=education_level,fill=uses_internet))+
-  geom_bar(stat = "count")+
-  theme(axis.text.x = element_text(angle = -15, vjust = 1, hjust=0))+
-  labs(x = "Education level", 
-       y = "Count",
-       title = "Education level and internet use",
-       fill = "Internet usage")
+```{r demotab1, fig.cap="Survey Respondent Demographics - Location", echo=FALSE}
+# table
+kbl(prov_dat, caption = "Location Demographics", booktabs = T, linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), latex_options = "HOLD_position") %>%
+  kable_paper("striped", full_width = F)
 ```
 
-```{r}
-cius_data$age_group <- cius_data$age_group %>% 
-  factor(levels=c("15 to 24 years",
-                  "25 to 34 years",
-                  "35 to 44 years",
-                  "45 to 54 years",
-                  "55 to 64 years",
-                  "65 years and over"))
-ggplot(cius_data, aes(x=age_group,fill=uses_internet))+
-  geom_bar(stat = "count") + 
-  scale_x_discrete(guide = guide_axis(n.dodge = 2)) + 
-  labs(x = "Age group", 
-       y = "Count",
-       title = "Age group and internet use",
-       fill = "Internet usage")
+```{r demotab2, fig.cap="Survey Respondent Demographics - Age and Gender", echo=FALSE}
+# table
+kbl(demo_dat, caption = "Age and Gender Demographics", booktabs = T, linesep = "") %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), latex_options = "HOLD_position") %>%
+  kable_paper("striped", full_width = F)
 ```
 
+In Table \@ref(tab:demotab1) and Table \@ref(tab:demotab2), the survey demographics are shown. It can be seen that the sample population is skewed towards more female respondents, and skewed towards older respondents.
 
-
-```{r}
+```{r, echo=FALSE}
 connection_data <- summarise_all(cius_data[,62:73], table)[-c(1:3),] %>%
   pivot_longer(everything(),names_to = "connection_type", values_to = "count")
+```
+
+```{r homeconnection, fig.cap="Respondent home connection type", echo=FALSE}
 ggplot(connection_data, aes(x=reorder(connection_type, -count),y=count))+
   geom_bar(stat = "identity") + 
+  scale_y_continuous() +
   theme(axis.text.x = element_text(angle = -15, vjust = 1, hjust=0)) + 
   labs(x = "Connection type", 
        y = "Count",
        title = "Home internet connection type")
 ```
-```{r}
+
+In Figure \@ref(fig:homeconnection), the three most popular types of home internet connections are cable, fiber optics, and mobile data. After that, approximately 7% of respondents are not sure what type of connection they have.
+
+```{r, echo=FALSE}
 internet_activity <- cbind(select(cius_data,
                                   no_communication,
                                   no_commerce,
@@ -152,6 +148,9 @@ internet_activity <- internet_activity[-c(2:4),] %>%
          Other=no_other_activities,
          Income=internet_income) %>%
   pivot_longer(everything(),names_to = "activity", values_to = "count")
+```
+
+```{r usepurpose, fig.cap="Respondent internet use purpose", echo=FALSE}
 ggplot(internet_activity, aes(x=reorder(activity, -count),y=count))+
   geom_bar(stat = "identity") + 
   labs(x = "Internet usage type", 
@@ -159,7 +158,9 @@ ggplot(internet_activity, aes(x=reorder(activity, -count),y=count))+
        title = "Purposes of internet usage")
 ```
 
-```{r}
+In Figure \@ref(fig:usepurpose), common uses of the internet are displayed.
+
+```{r, echo=FALSE}
 cius_data$hours_used <- cius_data$hours_used %>% 
   factor(levels=c("Less than 5 hours per week",
                   "5 to less than 10 hours per week",
@@ -168,6 +169,9 @@ cius_data$hours_used <- cius_data$hours_used %>%
                   "40 hours or more per week",
                   "Not stated",
                   "Valid skip"))
+```
+
+```{r internethours, fig.cap="Respondent weekly internet use", echo=FALSE}
 ggplot(cius_data, aes(x=hours_used))+
   geom_bar(stat = "count") + 
   theme(axis.text.x = element_text(angle = -15, vjust = 1, hjust=0)) + 
@@ -176,9 +180,66 @@ ggplot(cius_data, aes(x=hours_used))+
        title = "Hours of internet use per week (excluding entertainment)")
 ```
 
+In Figure \@ref(fig:internethours), the distribution of weekly internet usage of the respondents is shown. The most common amount of time spent on the internet per week is between 5 to 10 hours.
+
 # Results
 
-```{r}
+```{r internetuse, fig.cap="Respondent internet use and home internet access", echo=FALSE}
+#graph
+ggplot(cius_data, aes(x=fct_infreq(uses_internet), fill=home_internet_access))+
+  geom_bar(stat = "count") +
+  labs(x = "Uses the internet", 
+       y = "Count",
+       title = "Respondents and their usage and access to internet at home",
+       fill = "Home internet access")
+```
+
+In Figure \@ref(fig:internetuse), it is shown that most users use the internet in some way. The majority of respondents that do not use the internet also do not have an internet connection at home.
+
+```{r, echo=FALSE}
+cius_data$education_level <- cius_data$education_level %>% 
+  factor(levels=c("High school diploma or an equivalency certificate or less",
+                  "Certificate/diploma Univ. below bachelor/College/CEGEP/trade",
+                  "University degree above the bachelor or bachelor's degree",
+                  "Not stated"))
+
+```
+
+```{r educationlevel, fig.cap="Respondent education level and internet use", echo=FALSE}
+ggplot(cius_data, aes(x=education_level,fill=uses_internet))+
+  geom_bar(stat = "count")+
+  theme(axis.text.x = element_text(angle = -15, vjust = 1, hjust=0))+
+  labs(x = "Education level", 
+       y = "Count",
+       title = "Education level and internet use",
+       fill = "Internet usage")
+```
+
+In Figure \@ref(fig:educationlevel), it can be seen that internet usage proportion increases with respondent education level.
+
+```{r, echo=FALSE}
+cius_data$age_group <- cius_data$age_group %>% 
+  factor(levels=c("15 to 24 years",
+                  "25 to 34 years",
+                  "35 to 44 years",
+                  "45 to 54 years",
+                  "55 to 64 years",
+                  "65 years and over"))
+```
+
+```{r agegroup, fig.cap="Respondent age group and internet use", echo=FALSE}
+ggplot(cius_data, aes(x=age_group,fill=uses_internet))+
+  geom_bar(stat = "count") + 
+  scale_x_discrete(guide = guide_axis(n.dodge = 2)) + 
+  labs(x = "Age group", 
+       y = "Count",
+       title = "Age group and internet use",
+       fill = "Internet usage")
+```
+
+In Figure \@ref(fig:agegroup), as age group increases, the proportion of the group that does not use the internet increases.
+
+```{r, echo=FALSE, warning=FALSE}
 set.seed(318)
 regression_dat <- cius_data[cius_data$uses_internet=="Yes" &
                               cius_data$home_internet_access=="Yes" &
@@ -194,18 +255,46 @@ regression_dat <- regression_dat %>%
                                 sample(x = c(20:39), size = n(),replace = TRUE),
                               hours_used=="40 hours or more per week"~
                                 sample(x = c(40:60), size = n(),replace = TRUE)))
-```
+regression_dat <- regression_dat %>%
+  mutate_at(c("no_communication",
+              "no_commerce",
+              "no_entertainment",
+              "no_information",
+              "no_other_activities",
+              "internet_income"), funs(case_when(.=="Yes"~TRUE,
+                                                 TRUE~FALSE)))
+regression_dat <- regression_dat %>%
+  mutate_at(vars(62:73), funs(case_when(.=="Yes"~TRUE,
+                                        TRUE~FALSE)))
+regression_dat$connection_type <- names(regression_dat)[62:73][max.col(regression_dat[62:73], 'first')]
 
-```{r}
 lm_model <- lm(data = regression_dat, hours_used ~ 
                  gender + 
                  education_level + 
-                 age_group)
-modelsummary(lm_model)
-summary(lm_model)
+                 age_group +
+                 no_communication +
+                 no_commerce +
+                 no_entertainment +
+                 no_information +
+                 no_other_activities +
+                 internet_income)
 ```
 
+```{r regressionmodel, fig.cap="2018 Canadian Internet Use Regression Model", echo=FALSE}
+modelsummary(lm_model, fmt=1, title = "Model of weekly internet use quantity")
+```
+
+In Table \@ref(tab:regressionmodel), the regression model of internet use hours as a function of gender, education level, age group, and internet activities is displayed.
+
 # Discussion
+
+## Greater proportion of female respondents
+
+## Greater proportion of older respondents
+
+## Education and age trends
+
+## Weaknesses and improvements
 
 # References
 
