@@ -1,5 +1,5 @@
 ---
-title: "Impact of Internet Infrastructure on Canadian Household Productivity and Recreation"
+title: "Canadian Household Internet Productivity and Recreation Trends 2018"
 subtitle: "Brief Overview of Canadian Internet Use Trends"
 author: "Haocong Wu"
 date: "`r format(Sys.time(), '%d %B %Y')`"
@@ -32,7 +32,7 @@ Keywords: internet use, internet infrastructure, statistics canada, canadian res
 
 Internet access is becoming, if not already considered, a human right. It is a standard point of communication used by the majority of the Canadian population. The platform that the internet provides can be used to host a variety of activities, ranging from those of productive nature, to others of recreational and leisurely type. The growing importance of internet access necessitates a revision of the bare minimums of providing internet service.
 
-This paper examines the causal relations between individual internet usage amounts to factors such as connection speed,nature of use, and necessity of use.
+This paper examines the causal relations between individual internet usage amounts to factors such as connection speed, nature of use, and necessity of use.
 
 The following sections of the paper is organized as stated: the Data section discusses the source of the data and its surveying methodology, the Modelling section attempts to formalize a model incorporating various factors to explain the response variable of user household internet use duration, the Results section discusses the impact of the selected factors, and the Discussion section comments on the results and its validity, potential bias, and weaknesses of the paper.
 
@@ -114,6 +114,8 @@ kbl(demo_dat, caption = "Age and Gender Demographics", booktabs = T, linesep = "
 
 In Table \@ref(tab:demotab1) and Table \@ref(tab:demotab2), the survey demographics are shown. It can be seen that the sample population is skewed towards more female respondents, and skewed towards older respondents.
 
+\newpage
+
 ```{r, echo=FALSE}
 connection_data <- summarise_all(cius_data[,62:73], table)[-c(1:3),] %>%
   pivot_longer(everything(),names_to = "connection_type", values_to = "count")
@@ -130,6 +132,8 @@ ggplot(connection_data, aes(x=reorder(connection_type, -count),y=count))+
 ```
 
 In Figure \@ref(fig:homeconnection), the three most popular types of home internet connections are cable, fiber optics, and mobile data. After that, approximately 7% of respondents are not sure what type of connection they have.
+
+\newpage
 
 ```{r, echo=FALSE}
 internet_activity <- cbind(select(cius_data,
@@ -160,6 +164,8 @@ ggplot(internet_activity, aes(x=reorder(activity, -count),y=count))+
 
 In Figure \@ref(fig:usepurpose), common uses of the internet are displayed.
 
+\newpage
+
 ```{r, echo=FALSE}
 cius_data$hours_used <- cius_data$hours_used %>% 
   factor(levels=c("Less than 5 hours per week",
@@ -177,10 +183,12 @@ ggplot(cius_data, aes(x=hours_used))+
   theme(axis.text.x = element_text(angle = -15, vjust = 1, hjust=0)) + 
   labs(x = "Duration of use",
        y = "Count",
-       title = "Hours of internet use per week (excluding entertainment)")
+       title = "Hours of internet use per week")
 ```
 
 In Figure \@ref(fig:internethours), the distribution of weekly internet usage of the respondents is shown. The most common amount of time spent on the internet per week is between 5 to 10 hours.
+
+\newpage
 
 # Results
 
@@ -195,6 +203,8 @@ ggplot(cius_data, aes(x=fct_infreq(uses_internet), fill=home_internet_access))+
 ```
 
 In Figure \@ref(fig:internetuse), it is shown that most users use the internet in some way. The majority of respondents that do not use the internet also do not have an internet connection at home.
+
+\newpage
 
 ```{r, echo=FALSE}
 cius_data$education_level <- cius_data$education_level %>% 
@@ -217,6 +227,8 @@ ggplot(cius_data, aes(x=education_level,fill=uses_internet))+
 
 In Figure \@ref(fig:educationlevel), it can be seen that internet usage proportion increases with respondent education level.
 
+\newpage
+
 ```{r, echo=FALSE}
 cius_data$age_group <- cius_data$age_group %>% 
   factor(levels=c("15 to 24 years",
@@ -238,6 +250,8 @@ ggplot(cius_data, aes(x=age_group,fill=uses_internet))+
 ```
 
 In Figure \@ref(fig:agegroup), as age group increases, the proportion of the group that does not use the internet increases.
+
+\newpage
 
 ```{r, echo=FALSE, warning=FALSE}
 set.seed(318)
@@ -281,7 +295,9 @@ lm_model <- lm(data = regression_dat, hours_used ~
 ```
 
 ```{r regressionmodel, fig.cap="2018 Canadian Internet Use Regression Model", echo=FALSE}
-modelsummary(lm_model, fmt=1, title = "Model of weekly internet use quantity")
+modelsummary(lm_model, fmt=1, title = "Model of weekly internet use quantity") %>%
+  kable_styling(bootstrap_options = c("hover", "condensed"), latex_options = "HOLD_position") %>%
+  kable_paper("striped", full_width = F)
 ```
 
 In Table \@ref(tab:regressionmodel), the regression model of internet use hours as a function of gender, education level, age group, and internet activities is displayed.
@@ -290,11 +306,25 @@ In Table \@ref(tab:regressionmodel), the regression model of internet use hours 
 
 ## Greater proportion of female respondents
 
+From data displayed in Table \@ref(tab:demotab1) and graphed, the respondent demographic can be seen to have a larger female representation. This observation could be caused by a larger proportion of Canadian females being available to pick up the phone due to childcare and household work.
+
 ## Greater proportion of older respondents
+
+Despite the decreasing proportion of individuals at each age group that uses the internet shown in Figure \@ref(fig:agegroup), the number of respondents increases with each older age group. This at first glance seems conflicting with the fact that the CIUS is  conducted primarily on an online platform. A reason for this occurrence may be that the older age groups have more leisure time, and are willing to use their leisure time to respond to this survey.
 
 ## Education and age trends
 
+As education level increases, the proportion of respondents that use the internet increases, as shown in Figure \@ref(fig:educationlevel). In addition, the amount of time that one uses the internet per week increases with education level as well. This result likely arises due to the utility if not necessity of utilizing online resources to progress with further education, as well as the fact that individuals who undertake further education would be more inclined to adapt and utilize new technology.
+
+The converse is true with age, the younger the respondent, the more likely they are to both use the internet and use it for a longer duration per week, this is depicted by Figure \@ref(fig:agegroup). This occurrence is explainable by the attraction of online entertainment of social media, video games, and media consumption platforms to younger audiences. The younger the individual, the more accustomed they are to seek entertainment through online means.
+
 ## Weaknesses and improvements
+
+This paper attempts to address the current populations internet usage tendencies, and focuses on the duration of internet use. The respondents' demographics, connection type, and usage purposes were variables that were analyzed. Given that the goal of the paper is to find correlation between these factors and internet usage hours, the analysis that consisted of the factors of gender, age, education, and usage nature may be lacking. The analysis can be supplemented with the consideration of factors such as household economy, urban and rural living distinctions, and whether anyone in their household utilized the internet. These factors were not included in the survey, and can be collected from a follow-up supplemental survey.
+
+Another weakness of the analysis is making the assumption of generating uniform random ages for each age group to perform linear regression. This assumption was made due to the lack of more granular internet usage data. To improve on this aspect, perhaps ordinal regression may be a better fit to generate a model.
+
+\newpage
 
 # References
 

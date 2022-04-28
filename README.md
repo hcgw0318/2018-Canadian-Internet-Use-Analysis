@@ -22,7 +22,7 @@ Scripts:
 
 Recreation steps:
 
-    Obtain CIUS 2018 raw data from odesi portal (instructions found in the ../inputs/data folder), place CSV file in ..inputs/data
+    Obtain CIUS 2018 raw data from odesi portal (instructions found in the ../inputs/data folder), rename CSV to 'raw_data.csv' and place CSV file in ..inputs/data
     Open CIUS_analysis.Rproj
     Run scripts found in ../scripts sequentially
     Run paper.Rmd
